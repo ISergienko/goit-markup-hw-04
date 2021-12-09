@@ -22,7 +22,7 @@
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Студия</a>
+              <a class="nav-link current" href="index.html">Студия</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Портфолио</a>
@@ -58,7 +58,9 @@
       <section class="hero">
         <div class="hero-wrapper">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-btn" type="button">Заказать услугу</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -133,6 +135,7 @@
                 width="370"
                 height="294"
               />
+              <p class="work-item-text">Десктопные приложения</p>
             </li>
 
             <li class="work-item">
@@ -142,6 +145,7 @@
                 width="370"
                 height="294"
               />
+              <p class="work-item-text">Мобильные приложения</p>
             </li>
 
             <li class="work-item">
@@ -151,6 +155,7 @@
                 width="370"
                 height="294"
               />
+              <p class="work-item-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -456,5 +461,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop-modal">
+        <button class="modal-btn-close" type="button" data-modal-close>
+          <svg class="icon-close" width="11" height="11">
+            <use href="images/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
